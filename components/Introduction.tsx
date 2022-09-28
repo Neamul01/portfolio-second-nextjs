@@ -9,13 +9,19 @@ export default function Introduction() {
 
             {/* name and social section  */}
             <Stack>
-                <Typography variant='h2' sx={{ fontWeight: 'bold' }}>Md Neamul<br />Haque
+                <Typography variant='h2'
+                    sx={{
+                        fontWeight: 'bold',
+                        fontSize: '3rem',
+                        mb: '1rem'
+                    }}>
+                    Md Neamul<br />Haque
                     <Typography component={'span'} sx={{
                         flexGrow: 1,
                         bgcolor: 'text.secondary',
                         display: 'inline-block',
-                        height: '1rem',
-                        width: '1rem',
+                        height: '0.7rem',
+                        width: '0.7rem',
                         ml: '0.5rem',
                         borderRadius: '10rem'
                     }}></Typography>
@@ -35,7 +41,7 @@ export default function Introduction() {
                         <Typography sx={{
                             text: 'text.primary',
                             borderRight: 2,
-                            px: 1,
+                            pr: 1,
                             fontWeight: 'bold',
                             fontSize: '0.9rem'
                         }}>
@@ -54,7 +60,7 @@ export default function Introduction() {
                         <Typography sx={{
                             text: 'text.primary',
                             borderRight: 2,
-                            px: 1,
+                            pr: 1,
                             fontWeight: 'bold',
                             fontSize: '0.9rem'
                         }}>
@@ -97,14 +103,18 @@ export default function Introduction() {
                         textTransform: 'uppercase',
                         width: '100%',
                         textAlign: 'left',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        fontSize: '0.9rem',
+                        letterSpacing: '.12em',
+                        mb: '0.3rem'
                     }}>
                     Introduction
                 </Typography>
                 <Typography component={'p'}
                     sx={{
-                        fontSize: '2rem',
-                        fontWeight: 'bold'
+                        fontSize: '2.3rem',
+                        fontWeight: 'bold',
+                        lineHeight: '2.8rem'
                     }}>Full-Stack web<br />Developer
                 </Typography>
                 <Typography component={'p'} sx={{ my: '1rem' }}>
