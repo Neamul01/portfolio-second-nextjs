@@ -6,7 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function Navbar() {
     return (
-        <AppBar position='static' sx={{ boxShadow: 'none' }} style={{ backgroundColor: 'transparent' }} >
+        <AppBar position='static' sx={{ boxShadow: 'none', my: 6 }} style={{ backgroundColor: 'transparent' }} >
             <Toolbar
                 sx={{
                     bgcolor: 'background.default',
@@ -23,8 +23,8 @@ export default function Navbar() {
                         borderRadius: '10rem'
                     }}></Typography>
                 </Typography>
-                <Stack direction={'row'} spacing='2'  >
-                    <Stack direction={'row'} spacing='2' sx={{ pr: 2 }}>
+                <Stack direction={'row'}  >
+                    <Stack direction={'row'} spacing={2} sx={{ pr: 2 }}>
                         <Button sx={{ fontSize: '1rem', color: 'text.primary', fontWeight: 'bold' }} >Home</Button>
                         <Button sx={{ fontSize: '1rem', color: 'text.primary', fontWeight: 'bold' }}  >Portfolio</Button>
                         <Button sx={{ fontSize: '1rem', color: 'text.primary', fontWeight: 'bold' }}  >Blog</Button>
