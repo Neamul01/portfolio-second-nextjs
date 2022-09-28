@@ -1,14 +1,22 @@
-import { Button, Paper, Stack, Typography } from '@mui/material'
+import { Button, Grid, Paper, Stack, Typography } from '@mui/material'
 import React from 'react'
 import SouthIcon from '@mui/icons-material/South';
 import DownloadIcon from '@mui/icons-material/Download';
+import Styles from '../styles/Home.module.css'
 
 export default function Introduction() {
     return (
-        <Stack direction={'row'} sx={{ backgroundImage: 'none', boxShadow: 'none ', my: 6, p: 4 }}>
+        <Grid container columns={{ xs: 1, sm: 1, md: 2, lg: 3 }}
+            sx={{
+                backgroundImage: 'none',
+                boxShadow: 'none ',
+                my: 6,
+                p: 4,
+                // maxHeight: '41.5rem'
+            }}>
 
             {/* name and social section  */}
-            <Stack>
+            <Stack >
                 <Typography variant='h2'
                     sx={{
                         fontWeight: 'bold',
@@ -28,7 +36,7 @@ export default function Introduction() {
                 </Typography>
                 <Typography sx={{
                     width: '20%',
-                    height: 5,
+                    height: '0.1rem',
                     my: '1rem',
                     bgcolor: 'text.secondary',
                     borderRadius: '5rem'
@@ -88,15 +96,29 @@ export default function Introduction() {
                             color: 'Black'
                         },
                     }}>Resume</Button>
-            </Stack>
+            </Stack >
 
             {/* picture section  */}
             <Stack sx={{ m: 'auto' }}>
                 <h2>Here is the profile pic</h2>
-            </Stack>
+            </Stack >
 
             {/* Introduction section  */}
-            <Stack sx={{ ml: 'auto', maxWidth: '30%', m: '0' }}>
+            <Stack
+                sx={{
+                    ml: 'auto',
+                    maxWidth: '30%',
+                    m: '0',
+                    sm: {
+                        my: '6rem'
+                    },
+                    md: {
+                        my: '6rem'
+                    },
+                    lg: {
+                        my: '6rem'
+                    }
+                }}>
                 <Typography
                     sx={{
                         color: 'text.secondary',
@@ -120,7 +142,7 @@ export default function Introduction() {
                 <Typography component={'p'} sx={{ my: '1rem' }}>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate illum culpa omnis est libero provident recusandae eos quo doloremque nulla.
                 </Typography>
-                <Button variant='text'
+                <Button variant='text' className={Styles.menuArea}
                     sx={{
                         color: 'text.secondary',
                         textAlign: 'left',
@@ -133,7 +155,7 @@ export default function Introduction() {
                         }
                     }}
                     endIcon={<SouthIcon />}>Learn more</Button>
-            </Stack>
-        </Stack>
+            </Stack >
+        </Grid >
     )
 }
