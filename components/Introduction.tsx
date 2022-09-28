@@ -109,15 +109,15 @@ export default function Introduction() {
                     ml: 'auto',
                     maxWidth: '30%',
                     m: '0',
-                    sm: {
-                        my: '6rem'
-                    },
-                    md: {
-                        my: '6rem'
-                    },
-                    lg: {
-                        my: '6rem'
-                    }
+                    // sm: {
+                    //     my: '6rem'
+                    // },
+                    // md: {
+                    //     my: '6rem'
+                    // },
+                    // lg: {
+                    //     my: '6rem'
+                    // }
                 }}>
                 <Typography
                     sx={{
