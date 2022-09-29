@@ -1,9 +1,6 @@
 .container {
-  /* padding: 0 2rem; */
   display: flex;
   justify-content: center;
-  /* background-color: ; */
-  /* color:@text.secondary */
   font-family: 'Open Sans', sans-serif;
 }
 

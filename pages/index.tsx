@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import { createTheme, Paper, Stack, ThemeProvider } from '@mui/material'
 import Introduction from '../components/Introduction'
+import { Services } from '../components/Services'
 
 const theme = createTheme({
   palette: {
@@ -15,7 +16,7 @@ const theme = createTheme({
     },
     background: {
       default: '#2E2E35',
-      paper: '#2E2E35'
+      paper: '#34343B'
     }
   }
 });
@@ -26,11 +27,16 @@ const Home: NextPage = () => {
       <Paper className={styles.container}
         sx={{
           backgroundImage: 'none',
+          backgroundColor: 'background.default'
         }}
       >
-        <Stack sx={{ width: "75%", p: 4 }}>
+        <Stack
+          sx={{
+            alignItems: 'center'
+          }}>
           <Navbar />
           <Introduction />
+          <Services />
         </Stack>
       </Paper>
     </ThemeProvider>

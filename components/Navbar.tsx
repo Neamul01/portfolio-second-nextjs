@@ -8,20 +8,46 @@ import Styles from '../styles/Home.module.css'
 
 export default function Navbar() {
     return (
-        <AppBar position='static' sx={{ boxShadow: 'none', my: 6 }} style={{ backgroundColor: 'transparent' }} >
+        <AppBar position='static'
+            sx={{
+                boxShadow: 'none',
+                py: 6,
+                alignItems: 'center',
+                backgroundImage: 'none',
+                bgcolor: 'background.default',
+            }} style={{ backgroundColor: 'transparent' }} >
             <Toolbar
                 sx={{
-                    bgcolor: 'background.default',
+                    width: "75%",
                 }}>
-                <Typography variant='h6' component={'div'} sx={{ flexGrow: 1, color: 'text.primary', fontWeight: 'bold', fontSize: '2rem' }}>
-                    NH
-                    <Typography component={'span'} sx={{
+                <Typography
+                    variant='h6'
+                    component={'div'}
+                    sx={{
+                        flexGrow: 1,
+                    }}>
+                    <Button
+                        href='!#'
+                        className={Styles.menuArea}
+                        sx={{
+
+                            color: 'text.primary',
+                            fontWeight: 'bold',
+                            fontSize: '2rem',
+                            p: '0',
+                            ':hover': {
+                                bgcolor: 'background.default'
+                            },
+                        }}
+                    >
+                        NH
+                    </Button>
+                    <Typography component={'p'} sx={{
                         flexGrow: 1,
                         bgcolor: 'text.secondary',
                         display: 'inline-block',
                         height: '0.5rem',
                         width: '0.5rem',
-                        // ml: '0.5rem',
                         borderRadius: '10rem'
                     }}></Typography>
                 </Typography>
