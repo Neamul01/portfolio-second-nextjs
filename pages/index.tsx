@@ -6,6 +6,8 @@ import Navbar from '../components/Navbar'
 import { createTheme, Paper, Stack, ThemeProvider } from '@mui/material'
 import Introduction from '../components/Introduction'
 import { Services } from '../components/Services'
+import { Portfolio } from '../components/Portfolio'
+import { Blogs } from '../components/Blogs'
 
 const theme = createTheme({
   palette: {
@@ -36,7 +38,9 @@ const Home: NextPage = () => {
           }}>
           <Navbar />
           <Introduction />
-          <Services />
+          <Portfolio />
+          {/* <Services /> */}
+          <Blogs />
         </Stack>
       </Paper>
     </ThemeProvider>

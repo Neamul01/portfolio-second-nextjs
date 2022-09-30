@@ -12,7 +12,8 @@ export default function Introduction() {
                 backgroundImage: 'none',
                 display: 'flex',
                 justifyContent: 'center',
-                boxShadow: 'none'
+                boxShadow: 'none',
+                height: '80vh'
             }}
         >
             <Grid container columns={{ xs: 1, sm: 1, md: 2, lg: 3 }}
