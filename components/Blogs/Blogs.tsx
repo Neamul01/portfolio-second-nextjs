@@ -2,9 +2,11 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, ImageList, Imag
 import Image from 'next/image'
 import React from 'react'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { LatestPost } from './LatestPost';
+import { RestBlog } from './RestBlog';
 export const Blogs = () => {
     const latest2post = itemData.slice(0, 2);
-    const anotherPosts = itemData.slice(2, 5);
+    const restPosts = itemData.slice(2, 5);
     return (
         <Box
             sx={{
@@ -97,69 +99,9 @@ export const Blogs = () => {
                                     }}
                                     key={index}
                                 >
-                                    <CardMedia
-                                        component={"img"}
-                                        image={item.img}
-                                        alt="green iguana"
-                                        sx={{
-                                            height: "21rem"
-                                        }}
-                                    />
-                                    <CardContent
-                                        sx={{
-                                            px: '2rem',
-                                            py: '0',
-                                            mt: '2.2rem',
-                                            mb: '0.5rem'
-                                        }}
-                                    >
-                                        <Typography gutterBottom variant="h5" component="div" color='text.secondary'
-                                            sx={{
-                                                fontSize: "1.4rem",
-                                                lineHeight: "2rem",
-                                                transition: ".3s ease"
-                                            }}
-                                        >
-                                            {item.title}
-                                        </Typography>
-                                        <Typography variant="body2" color="text.primary"
-                                            sx={{
-                                                fontSize: '1rem',
-                                                lineHeight: "26px",
-                                                fontFamily: "'Nunito', sans-serif"
-                                            }}
-                                        >
-                                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                                            species, ranging across all continents except Antarctica
-                                        </Typography>
-                                    </CardContent>
-                                    <CardActions
-                                        sx={{
-                                            px: '2rem',
-                                            py: '0',
-                                            mb: '2.5rem'
-                                        }}
-                                    >
-                                        <Typography
-                                            sx={{
-                                                textTransform: "initial",
-                                                color: 'text.secondary',
-                                                position: 'relative',
-                                                fontWeight: 'bold'
-                                            }}
-                                        >
-                                            Read more &nbsp;
-                                            <NavigateNextIcon sx={{
-                                                color: 'text.secondary',
-                                                fontSize: '1.3rem',
-                                                position: 'absolute',
-                                                left: 87,
-                                                bottom: 1,
-                                                fontWeight: "900",
-                                                // ml: 1
-                                            }} />
-                                        </Typography>
-                                    </CardActions>
+                                    <LatestPost
+                                        item={item}
+                                    ></LatestPost>
                                 </Card>
                             ))
                         }
@@ -172,7 +114,7 @@ export const Blogs = () => {
                         >
                             {/* another posts  */}
                             {
-                                anotherPosts.map((item, index) => (
+                                restPosts.map((item, index) => (
                                     <Card
                                         sx={{
                                             backgroundColor: 'background.default !important',
@@ -180,61 +122,12 @@ export const Blogs = () => {
                                             display: "flex",
                                             alignItems: 'center',
                                             backgroundImage: 'none'
-                                            // maxHeight: '9.66rem'
                                         }}
                                         key={index}
                                     >
-                                        <Stack
-                                            sx={{
-                                                bgcolor: 'background.paper !important',
-                                                height: 'auto',
-                                                display: "flex",
-                                                alignItems: 'center',
-                                                flexDirection: 'row',
-                                                backgroundImage: 'none',
-                                                // my: '0.8rem'
-                                                // maxHeight: '9.66rem'
-                                            }}
-                                        >
-                                            <CardMedia
-                                                component={"img"}
-                                                image={item.img}
-                                                alt="green iguana"
-                                                sx={{
-                                                    height: "9.6rem",
-                                                    width: '8.5rem'
-                                                }}
-                                            />
-                                            <CardContent
-                                                sx={{
-                                                    display: 'flex',
-                                                    flexDirection: 'column',
-                                                }}
-                                            >
-                                                <Typography gutterBottom variant="h5" component="div" color='text.primary'
-                                                    sx={{
-                                                        fontSize: "1.1rem",
-                                                        lineHeight: "1.5rem",
-                                                        transition: ".3s ease",
-                                                        ':hover': {
-                                                            color: 'text.secondary'
-                                                        },
-                                                    }}
-                                                >
-                                                    {item.title}
-                                                </Typography>
-                                                <Typography variant="body2" color="text.primary"
-                                                    sx={{
-                                                        fontSize: '1rem',
-                                                        lineHeight: "1.3rem",
-                                                        whiteSpace: "break-spaces",
-                                                        fontFamily: "'Nunito', sans-serif"
-                                                    }}
-                                                >
-                                                    Lizards are a widespread group
-                                                </Typography>
-                                            </CardContent>
-                                        </Stack>
+                                        <RestBlog
+                                            item={item}
+                                        ></RestBlog>
                                     </Card>
                                 ))
                             }

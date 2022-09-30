@@ -7,7 +7,7 @@ import { createTheme, Paper, Stack, ThemeProvider } from '@mui/material'
 import Introduction from '../components/Introduction'
 import { Services } from '../components/Services'
 import { Portfolio } from '../components/Portfolio'
-import { Blogs } from '../components/Blogs'
+import { Blogs } from '../components/Blogs/Blogs'
 
 const theme = createTheme({
   palette: {
