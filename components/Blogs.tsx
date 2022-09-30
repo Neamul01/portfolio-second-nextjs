@@ -37,7 +37,7 @@ export const Blogs = () => {
                         letterSpacing: ".12em"
                     }}
                 >
-                    Portfolio
+                    Blogs
                 </Typography>
                 <Typography
                     component={'h2'}
@@ -51,7 +51,7 @@ export const Blogs = () => {
                         fontWeight: "700"
                     }}
                 >
-                    My Masterpiece Collection
+                    My Latest Articles
                 </Typography>
                 <Typography
                     component={'div'}
@@ -191,7 +191,8 @@ export const Blogs = () => {
                                                 display: "flex",
                                                 alignItems: 'center',
                                                 flexDirection: 'row',
-                                                backgroundImage: 'none'
+                                                backgroundImage: 'none',
+                                                // my: '0.8rem'
                                                 // maxHeight: '9.66rem'
                                             }}
                                         >
@@ -237,6 +238,27 @@ export const Blogs = () => {
                                     </Card>
                                 ))
                             }
+                            <Typography
+                                sx={{
+                                    textTransform: "initial",
+                                    color: 'text.secondary',
+                                    bgcolor: 'background.default',
+                                    position: 'relative',
+                                    fontWeight: 'bold',
+                                    pt: '1.5rem'
+                                }}
+                            >
+                                All Blogs
+                                <NavigateNextIcon sx={{
+                                    color: 'text.secondary',
+                                    fontSize: '1.3rem',
+                                    position: 'absolute',
+                                    left: 87,
+                                    bottom: 17,
+                                    fontWeight: "900",
+                                    // ml: 1
+                                }} />
+                            </Typography>
                         </ImageList>
                     </ImageList>
                 </Box>
