@@ -4,7 +4,7 @@ import React from 'react'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 export const Blogs = () => {
     const latest2post = itemData.slice(0, 2);
-    const anotherPosts = itemData.slice(2);
+    const anotherPosts = itemData.slice(2, 5);
     return (
         <Box
             sx={{
@@ -166,57 +166,74 @@ export const Blogs = () => {
 
                         <ImageList
                             cols={1}
+                            sx={{
+                                bgcolor: 'background.paper'
+                            }}
                         >
                             {/* another posts  */}
                             {
                                 anotherPosts.map((item, index) => (
                                     <Card
                                         sx={{
-                                            bgcolor: 'background.paper',
+                                            backgroundColor: 'background.default !important',
                                             height: 'auto',
-                                            display: "flex"
+                                            display: "flex",
+                                            alignItems: 'center',
+                                            backgroundImage: 'none'
+                                            // maxHeight: '9.66rem'
                                         }}
                                         key={index}
                                     >
-                                        <CardMedia
-                                            component={"img"}
-                                            image={item.img}
-                                            alt="green iguana"
+                                        <Stack
                                             sx={{
-                                                height: "9.6rem",
-                                                width: '8.5rem'
-                                            }}
-                                        />
-                                        <CardContent
-                                            sx={{
-                                                px: '2rem',
-                                                py: '0',
-                                                mt: '2.2rem',
-                                                mb: '0.5rem',
-                                                display: 'flex',
-                                                flexDirection: 'column'
+                                                bgcolor: 'background.paper !important',
+                                                height: 'auto',
+                                                display: "flex",
+                                                alignItems: 'center',
+                                                flexDirection: 'row',
+                                                backgroundImage: 'none'
+                                                // maxHeight: '9.66rem'
                                             }}
                                         >
-                                            <Typography gutterBottom variant="h5" component="div" color='text.primary'
+                                            <CardMedia
+                                                component={"img"}
+                                                image={item.img}
+                                                alt="green iguana"
                                                 sx={{
-                                                    fontSize: "1.4rem",
-                                                    lineHeight: "2rem",
-                                                    transition: ".3s ease",
-                                                    ":hover":
+                                                    height: "9.6rem",
+                                                    width: '8.5rem'
+                                                }}
+                                            />
+                                            <CardContent
+                                                sx={{
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
                                                 }}
                                             >
-                                                {item.title}
-                                            </Typography>
-                                            <Typography variant="body2" color="text.primary"
-                                                sx={{
-                                                    fontSize: '1rem',
-                                                    lineHeight: "26px",
-                                                    fontFamily: "'Nunito', sans-serif"
-                                                }}
-                                            >
-                                                Lizards are a widespread group
-                                            </Typography>
-                                        </CardContent>
+                                                <Typography gutterBottom variant="h5" component="div" color='text.primary'
+                                                    sx={{
+                                                        fontSize: "1.1rem",
+                                                        lineHeight: "1.5rem",
+                                                        transition: ".3s ease",
+                                                        ':hover': {
+                                                            color: 'text.secondary'
+                                                        },
+                                                    }}
+                                                >
+                                                    {item.title}
+                                                </Typography>
+                                                <Typography variant="body2" color="text.primary"
+                                                    sx={{
+                                                        fontSize: '1rem',
+                                                        lineHeight: "1.3rem",
+                                                        whiteSpace: "break-spaces",
+                                                        fontFamily: "'Nunito', sans-serif"
+                                                    }}
+                                                >
+                                                    Lizards are a widespread group
+                                                </Typography>
+                                            </CardContent>
+                                        </Stack>
                                     </Card>
                                 ))
                             }
