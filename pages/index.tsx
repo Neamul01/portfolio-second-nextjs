@@ -8,6 +8,8 @@ import Introduction from '../components/Introduction'
 import { Services } from '../components/Services'
 import { Portfolio } from '../components/Portfolio'
 import { Blogs } from '../components/Blogs/Blogs'
+import { Contact } from '../components/Contact'
+import { Footer } from '../components/Footer'
 
 const theme = createTheme({
   palette: {
@@ -41,6 +43,8 @@ const Home: NextPage = () => {
           <Portfolio />
           {/* <Services /> */}
           <Blogs />
+          <Contact />
+          <Footer />
         </Stack>
       </Paper>
     </ThemeProvider>

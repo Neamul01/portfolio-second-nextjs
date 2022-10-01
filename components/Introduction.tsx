@@ -3,6 +3,8 @@ import React from 'react'
 import SouthIcon from '@mui/icons-material/South';
 import DownloadIcon from '@mui/icons-material/Download';
 import Styles from '../styles/Home.module.css'
+import Image from 'next/image';
+import MyPhoto from 'public/my-pic.png'
 
 export default function Introduction() {
     return (
@@ -13,7 +15,8 @@ export default function Introduction() {
                 display: 'flex',
                 justifyContent: 'center',
                 boxShadow: 'none',
-                height: '80vh'
+                height: '80vh',
+                overflow: 'hidden'
             }}
         >
             <Grid container columns={{ xs: 1, sm: 1, md: 2, lg: 3 }}
@@ -111,7 +114,13 @@ export default function Introduction() {
 
                 {/* picture section  */}
                 <Stack sx={{ m: 'auto' }}>
-                    <h2>Here is the profile pic</h2>
+                    <Image
+                        width={500}
+                        height={839}
+                        // placeholder='blur'
+                        src={MyPhoto}
+                        alt={'Md Neamul Haque'}
+                    ></Image>
                 </Stack >
 
                 {/* Introduction section  */}
