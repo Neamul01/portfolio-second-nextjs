@@ -1,10 +1,12 @@
-import { Box, Card, CardContent, IconButton, Stack, Typography } from '@mui/material'
+import { Box, Button, Card, CardContent, IconButton, Stack, Typography } from '@mui/material'
 import React from 'react'
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+// import EmailIcon from '@mui/icons-material/Email';
+// import PhoneIcon from '@mui/icons-material/Phone';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { Email, Phone, Facebook, LinkedIn, WhatsApp } from '@mui/icons-material'
+import Styles from '../styles/Home.module.css'
 
 export const Contact = () => {
     const contacts = [
@@ -29,12 +31,6 @@ export const Contact = () => {
         }
     ]
 
-    // const MaterialIcon = ({ icon: string }) => {
-    //     switch (icon) {
-    //         case 'AccessAlarmIcon': return <EmailIcon />
-    //         default: return null
-    //     }
-    // }
     return (
         <Box
             sx={{
@@ -111,7 +107,7 @@ export const Contact = () => {
             >
 
                 {/* email card  */}
-                <Card sx={{ minWidth: 275 }}>
+                <Card sx={{ minWidth: '22rem' }}>
                     <CardContent
                         sx={{
                             display: 'flex',
@@ -120,16 +116,18 @@ export const Contact = () => {
                         }}
                     >
                         <IconButton aria-label="email">
-                            <EmailIcon />
+                            <Email />
                         </IconButton>
-                        <Typography
+                        <Button
+                            href='!#'
+                            className={Styles.menuArea}
                             sx={{
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
                                 ml: '1rem'
                             }}
-                        >neamulhaque3298@gmail.com</Typography>
+                        >neamulhaque3298@gmail.com</Button>
                     </CardContent>
                 </Card>
 
@@ -143,21 +141,23 @@ export const Contact = () => {
                         }}
                     >
                         <IconButton aria-label="email">
-                            <PhoneIcon />
+                            <Phone />
                         </IconButton>
-                        <Typography
+                        <Button
+                            href='!#'
+                            className={Styles.menuArea}
                             sx={{
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
                                 ml: '1rem'
                             }}
-                        >+8801865636932</Typography>
+                        >+8801865636932</Button>
                     </CardContent>
                 </Card>
 
                 {/* skype card  */}
-                <Card sx={{ minWidth: 275, marginTop: '0 !important' }}>
+                <Card sx={{ minWidth: '22rem', marginTop: '0 !important' }}>
                     <CardContent
                         sx={{
                             display: 'flex',
@@ -166,21 +166,23 @@ export const Contact = () => {
                         }}
                     >
                         <IconButton aria-label="email">
-                            <EmailIcon />
+                            <Email />
                         </IconButton>
-                        <Typography
+                        <Button
+                            href='!#'
+                            className={Styles.menuArea}
                             sx={{
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
                                 ml: '1rem'
                             }}
-                        >neamulhaque3298@gmail.com</Typography>
+                        >neamulhaque3298@gmail.com</Button>
                     </CardContent>
                 </Card>
 
                 {/* facebook card  */}
-                <Card sx={{ minWidth: 275 }}>
+                <Card sx={{ minWidth: '22rem' }}>
                     <CardContent
                         sx={{
                             display: 'flex',
@@ -189,21 +191,23 @@ export const Contact = () => {
                         }}
                     >
                         <IconButton aria-label="email">
-                            <FacebookIcon />
+                            <Facebook />
                         </IconButton>
-                        <Typography
+                        <Button
+                            href='!#'
+                            className={Styles.menuArea}
                             sx={{
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
                                 ml: '1rem'
                             }}
-                        >neamulhaque3298@gmail.com</Typography>
+                        >Facebook</Button>
                     </CardContent>
                 </Card>
 
                 {/* linkedin card  */}
-                <Card sx={{ minWidth: 275 }}>
+                <Card sx={{ minWidth: '22rem' }}>
                     <CardContent
                         sx={{
                             display: 'flex',
@@ -212,21 +216,23 @@ export const Contact = () => {
                         }}
                     >
                         <IconButton aria-label="email">
-                            <LinkedInIcon />
+                            <LinkedIn />
                         </IconButton>
-                        <Typography
+                        <Button
+                            href='!#'
+                            className={Styles.menuArea}
                             sx={{
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
                                 ml: '1rem'
                             }}
-                        >neamulhaque3298@gmail.com</Typography>
+                        >LinkedIn</Button>
                     </CardContent>
                 </Card>
 
                 {/* whatsApp card  */}
-                <Card sx={{ minWidth: 275 }}>
+                <Card sx={{ minWidth: '22rem' }}>
                     <CardContent
                         sx={{
                             display: 'flex',
@@ -235,16 +241,18 @@ export const Contact = () => {
                         }}
                     >
                         <IconButton aria-label="email">
-                            <WhatsAppIcon />
+                            <WhatsApp />
                         </IconButton>
-                        <Typography
+                        <Button
+                            href='!#'
+                            className={Styles.menuArea}
                             sx={{
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
                                 ml: '1rem'
                             }}
-                        >neamulhaque3298@gmail.com</Typography>
+                        >WhatsApp</Button>
                     </CardContent>
                 </Card>
             </Stack>
