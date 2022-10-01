@@ -1,7 +1,7 @@
-import { CardActions, CardContent, CardMedia, Typography } from '@mui/material'
+import { Button, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-
+import Styles from '../../styles/Home.module.css'
 
 type itemType = {
     item: {
@@ -58,25 +58,26 @@ export const LatestPost = (props: itemType) => {
                     mb: '2.5rem'
                 }}
             >
-                <Typography
+                <Button
+                    href='!#'
+                    className={Styles.menuArea}
+                    endIcon={
+                        <NavigateNextIcon sx={{
+                            color: 'text.secondary',
+                            fontWeight: "900",
+                        }} />
+                    }
                     sx={{
                         textTransform: "initial",
                         color: 'text.secondary',
-                        position: 'relative',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        ':hover': {
+                            bgcolor: 'transparent'
+                        },
                     }}
                 >
                     Read more &nbsp;
-                    <NavigateNextIcon sx={{
-                        color: 'text.secondary',
-                        fontSize: '1.3rem',
-                        position: 'absolute',
-                        left: 87,
-                        bottom: 1,
-                        fontWeight: "900",
-                        // ml: 1
-                    }} />
-                </Typography>
+                </Button>
             </CardActions>
         </>
     )
