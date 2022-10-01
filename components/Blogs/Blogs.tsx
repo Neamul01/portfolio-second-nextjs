@@ -4,6 +4,8 @@ import React from 'react'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { LatestPost } from './LatestPost';
 import { RestBlog } from './RestBlog';
+import Styles from '../../styles/Home.module.css'
+
 export const Blogs = () => {
     const latest2post = itemData.slice(0, 2);
     const restPosts = itemData.slice(2, 5);
@@ -131,27 +133,35 @@ export const Blogs = () => {
                                     </Card>
                                 ))
                             }
-                            <Typography
+                            <Stack
                                 sx={{
-                                    textTransform: "initial",
-                                    color: 'text.secondary',
-                                    bgcolor: 'background.default',
-                                    position: 'relative',
-                                    fontWeight: 'bold',
-                                    pt: '1.5rem'
+                                    bgcolor: 'background.default'
                                 }}
                             >
-                                All Blogs
-                                <NavigateNextIcon sx={{
-                                    color: 'text.secondary',
-                                    fontSize: '1.3rem',
-                                    position: 'absolute',
-                                    left: 87,
-                                    bottom: 17,
-                                    fontWeight: "900",
-                                    // ml: 1
-                                }} />
-                            </Typography>
+                                <Button
+                                    href='!#'
+                                    className={Styles.menuArea}
+                                    endIcon={<NavigateNextIcon sx={{
+                                        color: 'text.secondary',
+                                        fontSize: '1.3rem',
+                                        fontWeight: "900",
+                                    }} />}
+                                    sx={{
+                                        textTransform: "initial",
+                                        color: 'text.secondary',
+                                        bgcolor: 'background.default',
+                                        width: '30%',
+                                        fontWeight: 'bold',
+                                        px: '0',
+                                        pt: '1.5rem',
+                                        ':hover': {
+                                            bgcolor: 'background.default'
+                                        },
+                                    }}
+                                >
+                                    All Blogs
+                                </Button>
+                            </Stack>
                         </ImageList>
                     </ImageList>
                 </Box>
