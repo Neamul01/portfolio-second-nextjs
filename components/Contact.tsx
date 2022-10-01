@@ -112,7 +112,8 @@ export const Contact = () => {
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
-                            padding: '1.5rem'
+                            padding: '1.5rem',
+                            bgcolor: 'background.default'
                         }}
                     >
                         <IconButton aria-label="email">
@@ -125,7 +126,11 @@ export const Contact = () => {
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
-                                ml: '1rem'
+                                ml: '1rem',
+                                textTransform: 'inherit',
+                                ':hover': {
+                                    bgcolor: 'background.default'
+                                },
                             }}
                         >neamulhaque3298@gmail.com</Button>
                     </CardContent>
@@ -138,6 +143,7 @@ export const Contact = () => {
                             display: 'flex',
                             alignItems: 'center',
                             padding: '1.5rem',
+                            bgcolor: 'background.default'
                         }}
                     >
                         <IconButton aria-label="email">
@@ -150,7 +156,11 @@ export const Contact = () => {
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
-                                ml: '1rem'
+                                ml: '1rem',
+                                textTransform: 'inherit',
+                                ':hover': {
+                                    bgcolor: 'background.default'
+                                },
                             }}
                         >+8801865636932</Button>
                     </CardContent>
@@ -162,7 +172,8 @@ export const Contact = () => {
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
-                            padding: '1.5rem'
+                            padding: '1.5rem',
+                            bgcolor: 'background.default'
                         }}
                     >
                         <IconButton aria-label="email">
@@ -175,7 +186,11 @@ export const Contact = () => {
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
-                                ml: '1rem'
+                                ml: '1rem',
+                                textTransform: 'inherit',
+                                ':hover': {
+                                    bgcolor: 'background.default'
+                                },
                             }}
                         >neamulhaque3298@gmail.com</Button>
                     </CardContent>
@@ -187,7 +202,8 @@ export const Contact = () => {
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
-                            padding: '1.5rem'
+                            padding: '1.5rem',
+                            bgcolor: 'background.default'
                         }}
                     >
                         <IconButton aria-label="email">
@@ -200,7 +216,11 @@ export const Contact = () => {
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
-                                ml: '1rem'
+                                ml: '1rem',
+                                textTransform: 'inherit',
+                                ':hover': {
+                                    bgcolor: 'background.default'
+                                },
                             }}
                         >Facebook</Button>
                     </CardContent>
@@ -212,7 +232,8 @@ export const Contact = () => {
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
-                            padding: '1.5rem'
+                            padding: '1.5rem',
+                            bgcolor: 'background.default'
                         }}
                     >
                         <IconButton aria-label="email">
@@ -225,7 +246,11 @@ export const Contact = () => {
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
-                                ml: '1rem'
+                                ml: '1rem',
+                                textTransform: 'inherit',
+                                ':hover': {
+                                    bgcolor: 'background.default'
+                                },
                             }}
                         >LinkedIn</Button>
                     </CardContent>
@@ -237,7 +262,8 @@ export const Contact = () => {
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
-                            padding: '1.5rem'
+                            padding: '1.5rem',
+                            bgcolor: 'background.default'
                         }}
                     >
                         <IconButton aria-label="email">
@@ -250,7 +276,11 @@ export const Contact = () => {
                                 fontSize: '1.1rem',
                                 color: 'text.secondary',
                                 fontWeight: 'bold',
-                                ml: '1rem'
+                                ml: '1rem',
+                                textTransform: 'inherit',
+                                ':hover': {
+                                    bgcolor: 'background.default'
+                                },
                             }}
                         >WhatsApp</Button>
                     </CardContent>
