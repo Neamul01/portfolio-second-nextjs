@@ -209,20 +209,22 @@ export const Contact = () => {
                         <IconButton aria-label="email">
                             <Facebook />
                         </IconButton>
-                        <Button
-                            href='!#'
-                            className={Styles.menuArea}
-                            sx={{
-                                fontSize: '1.1rem',
-                                color: 'text.secondary',
-                                fontWeight: 'bold',
-                                ml: '1rem',
-                                textTransform: 'inherit',
-                                ':hover': {
-                                    bgcolor: 'background.default'
-                                },
-                            }}
-                        >Facebook</Button>
+                        <Typography component={'a'} href='https://www.facebook.com/neamul.haque.1614' target={'_blank'}>
+                            <Button
+                                href='!#'
+                                className={Styles.menuArea}
+                                sx={{
+                                    fontSize: '1.1rem',
+                                    color: 'text.secondary',
+                                    fontWeight: 'bold',
+                                    ml: '1rem',
+                                    textTransform: 'inherit',
+                                    ':hover': {
+                                        bgcolor: 'background.default'
+                                    },
+                                }}
+                            >Facebook</Button>
+                        </Typography>
                     </CardContent>
                 </Card>
 
@@ -239,20 +241,22 @@ export const Contact = () => {
                         <IconButton aria-label="email">
                             <LinkedIn />
                         </IconButton>
-                        <Button
-                            href='!#'
-                            className={Styles.menuArea}
-                            sx={{
-                                fontSize: '1.1rem',
-                                color: 'text.secondary',
-                                fontWeight: 'bold',
-                                ml: '1rem',
-                                textTransform: 'inherit',
-                                ':hover': {
-                                    bgcolor: 'background.default'
-                                },
-                            }}
-                        >LinkedIn</Button>
+                        <Typography component='a' href='https://www.linkedin.com/in/neamul62/' target='_blanck'>
+                            <Button
+                                href='!#'
+                                className={Styles.menuArea}
+                                sx={{
+                                    fontSize: '1.1rem',
+                                    color: 'text.secondary',
+                                    fontWeight: 'bold',
+                                    ml: '1rem',
+                                    textTransform: 'inherit',
+                                    ':hover': {
+                                        bgcolor: 'background.default'
+                                    },
+                                }}
+                            >LinkedIn</Button>
+                        </Typography>
                     </CardContent>
                 </Card>
 
@@ -269,20 +273,22 @@ export const Contact = () => {
                         <IconButton aria-label="email">
                             <WhatsApp />
                         </IconButton>
-                        <Button
-                            href='!#'
-                            className={Styles.menuArea}
-                            sx={{
-                                fontSize: '1.1rem',
-                                color: 'text.secondary',
-                                fontWeight: 'bold',
-                                ml: '1rem',
-                                textTransform: 'inherit',
-                                ':hover': {
-                                    bgcolor: 'background.default'
-                                },
-                            }}
-                        >WhatsApp</Button>
+                        <Typography>
+                            <Button
+                                href='!#'
+                                className={Styles.menuArea}
+                                sx={{
+                                    fontSize: '1.1rem',
+                                    color: 'text.secondary',
+                                    fontWeight: 'bold',
+                                    ml: '1rem',
+                                    textTransform: 'inherit',
+                                    ':hover': {
+                                        bgcolor: 'background.default'
+                                    },
+                                }}
+                            >WhatsApp</Button>
+                        </Typography>
                     </CardContent>
                 </Card>
             </Stack>

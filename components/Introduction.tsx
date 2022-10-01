@@ -60,56 +60,101 @@ export default function Introduction() {
                             mb: '2rem',
                         }}>
                         <Stack direction={'row'} sx={{ my: 1 }}>
-                            <Typography sx={{
-                                text: 'text.primary',
-                                borderRight: 2,
-                                pr: 1,
-                                fontWeight: 'bold',
-                                fontSize: '0.9rem'
-                            }}>
-                                Instagram
+                            <Typography component={'a'} href='#!' target='_blank'>
+                                <Button
+                                    href='!#'
+                                    size={'small'}
+                                    sx={{
+                                        color: 'text.primary',
+                                        borderRight: 2,
+                                        borderRadius: '0',
+                                        pr: "1rem",
+                                        fontWeight: 'bold',
+                                        fontSize: '0.9rem !important',
+                                        textTransform: 'inherit',
+                                        ':hover': {
+                                            bgcolor: 'transparent',
+                                            color: 'text.secondary'
+                                        },
+                                    }}>
+                                    Instagram
+                                </Button>
                             </Typography>
-                            <Typography sx={{
-                                text: 'text.primary',
-                                px: 1,
-                                fontWeight: 'bold',
-                                fontSize: '0.9rem'
-                            }}>
-                                LinkedIn
+                            <Typography component='a' href='https://www.linkedin.com/in/neamul62/' target='_blanck'>
+                                <Button
+                                    href='!#'
+                                    size={'small'}
+                                    sx={{
+                                        color: 'text.primary',
+                                        mx: 1,
+                                        fontWeight: 'bold',
+                                        fontSize: '0.9rem',
+                                        textTransform: 'inherit',
+                                        ':hover': {
+                                            bgcolor: 'transparent',
+                                            color: 'text.secondary'
+                                        },
+                                    }}>
+                                    LinkedIn
+                                </Button>
                             </Typography>
                         </Stack>
                         <Stack direction={'row'}>
-                            <Typography sx={{
-                                text: 'text.primary',
-                                borderRight: 2,
-                                pr: 1,
-                                fontWeight: 'bold',
-                                fontSize: '0.9rem'
-                            }}>
-                                Facebook
+                            <Typography component={'a'} href='https://www.facebook.com/neamul.haque.1614' target={'_blank'}>
+                                <Button
+                                    href='!#'
+                                    size={'small'}
+                                    sx={{
+                                        color: 'text.primary',
+                                        borderRight: 2,
+                                        borderRadius: '0',
+                                        pr: '1rem',
+                                        fontWeight: 'bold',
+                                        fontSize: '0.9rem',
+                                        textTransform: 'inherit',
+                                        ':hover': {
+                                            bgcolor: 'transparent',
+                                            color: 'text.secondary'
+                                        },
+                                    }}>
+                                    Facebook
+                                </Button>
                             </Typography>
-                            <Typography sx={{
-                                text: 'text.primary',
-                                px: 1,
-                                fontWeight: 'bold',
-                                fontSize: '0.9rem'
-                            }}>
-                                WhatsApp
+                            <Typography component={'a'} href='#!' target='_blank'>
+                                <Button
+                                    href='!#'
+                                    size={'small'}
+                                    sx={{
+                                        color: 'text.primary',
+                                        mx: 1,
+                                        fontWeight: 'bold',
+                                        fontSize: '0.9rem',
+                                        textTransform: 'inherit',
+                                        ':hover': {
+                                            bgcolor: 'transparent',
+                                            color: 'text.secondary'
+                                        },
+                                    }}>
+                                    WhatsApp
+                                </Button>
                             </Typography>
                         </Stack>
                     </Stack>
-                    <Button endIcon={<DownloadIcon />} variant='outlined' size='large'
-                        sx={{
-                            color: 'text.secondary',
-                            borderColor: 'text.secondary',
-                            fontWeight: 'bold',
-                            width: '60%',
-                            ':hover': {
-                                bgcolor: 'text.secondary',
+                    <Typography component={'a'} href='https://drive.google.com/uc?export=download&id=1ZAVzdEyZqOrMH31bMF19ClDXuhh9VxIA' target={'_blank'}>
+                        <Button endIcon={<DownloadIcon />} variant='outlined' size='large'
+                            sx={{
+                                color: 'text.secondary',
                                 borderColor: 'text.secondary',
-                                color: 'Black'
-                            },
-                        }}>Resume</Button>
+                                fontWeight: 'bold',
+                                width: '60%',
+                                ':hover': {
+                                    bgcolor: 'text.secondary',
+                                    borderColor: 'text.secondary',
+                                    color: 'Black'
+                                },
+                            }}>Resume
+                        </Button>
+                    </Typography>
                 </Stack >
 
                 {/* picture section  */}
@@ -162,14 +207,16 @@ export default function Introduction() {
                     <Typography component={'p'} sx={{ my: '1rem' }}>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate illum culpa omnis est libero provident recusandae eos quo doloremque nulla.
                     </Typography>
-                    <Button variant='text' className={Styles.menuArea}
+                    <Button variant='text'
+                        href='!#'
+                        className={Styles.menuArea}
                         sx={{
                             color: 'text.secondary',
-                            textAlign: 'left',
-                            width: '45%',
+                            width: '39%',
                             fontWeight: 'bold',
                             textTransform: 'inherit',
                             fontSize: '1rem',
+                            p: 0,
                             ':hover': {
                                 bgcolor: 'background.default'
                             }

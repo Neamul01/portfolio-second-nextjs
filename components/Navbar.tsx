@@ -103,45 +103,49 @@ export default function Navbar() {
                             }}  >Contact</Button>
                     </Stack>
                     <Stack direction={'row'} spacing='3' sx={{ color: 'text.primary', fontWeight: 'bold', mr: 2, alignItems: 'center', borderLeft: 1, pl: 2 }}>
-                        <IconButton
-                            // href='!#'    
-                            className={Styles.menuArea}
-                            component={'p'}
-                            sx={{
-                                pr: 1,
-                                fontSize: '1rem',
-                                color: 'text.primary',
-                                fontWeight: 'bold',
-                                display: 'inline-block',
-                                padding: '0'
-                            }}><FacebookIcon />
-                        </IconButton>
-                        <IconButton
-                            // href='!#'
-                            className={Styles.menuArea}
-                            component={'p'}
-                            size='small'
-                            sx={{
-                                mx: '0.6rem !important',
-                                fontSize: '1rem',
-                                color: 'text.primary',
-                                fontWeight: 'bold',
-                                display: 'inline-block',
-                                padding: '0',
-                            }}><LinkedInIcon />
-                        </IconButton>
-                        <IconButton
-                            // href='!#'
-                            className={Styles.menuArea}
-                            component={'p'}
-                            sx={{
-                                fontSize: '1rem',
-                                fontWeight: 'bold',
-                                display: 'inline-block',
-                                padding: '0'
-                            }}>
-                            <Link href='!#' sx={{ color: 'text.primary', }}><WhatsAppIcon /></Link>
-                        </IconButton>
+                        <Typography component={'a'} href='https://www.facebook.com/neamul.haque.1614' target={'_blank'}>
+                            <IconButton
+                                // href='!#'    
+                                className={Styles.menuArea}
+                                component={'p'}
+                                sx={{
+                                    pr: 1,
+                                    fontSize: '1rem',
+                                    color: 'text.primary',
+                                    fontWeight: 'bold',
+                                    display: 'inline-block',
+                                    padding: '0'
+                                }}><FacebookIcon />
+                            </IconButton>
+                        </Typography>
+                        <Typography component='a' href='https://www.linkedin.com/in/neamul62/' target='_blanck'>
+                            <IconButton
+                                className={Styles.menuArea}
+                                component={'p'}
+                                size='small'
+                                sx={{
+                                    mx: '0.6rem !important',
+                                    fontSize: '1rem',
+                                    color: 'text.primary',
+                                    fontWeight: 'bold',
+                                    display: 'inline-block',
+                                    padding: '0',
+                                }}><LinkedInIcon />
+                            </IconButton>
+                        </Typography>
+                        <Typography component={'a'} href='#!' target='_blank' >
+                            <IconButton
+                                className={Styles.menuArea}
+                                component={'p'}
+                                sx={{
+                                    fontSize: '1rem',
+                                    fontWeight: 'bold',
+                                    display: 'inline-block',
+                                    padding: '0'
+                                }}>
+                                <Link href='!#' sx={{ color: 'text.primary', }}><WhatsAppIcon /></Link>
+                            </IconButton>
+                        </Typography>
                     </Stack>
                 </Stack >
             </Toolbar >
