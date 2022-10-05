@@ -69,7 +69,7 @@ export const Portfolio = () => {
                         textAlign: 'center'
                     }}
                 >
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non proident, sunt in culpa qui officia
+                    Here are my best projects. All are not done yet something is under construction, and I am working with them. If you have any suggestions please share them with me.
                 </Typography>
             </Stack>
             <Stack spacing={4}
