@@ -8,6 +8,8 @@ type itemType = {
         img: string
         title: string
         height?: string | undefined
+        url?: string
+        description?: string
     }
 }
 
@@ -47,8 +49,7 @@ export const LatestPost = (props: itemType) => {
                         fontFamily: "'Nunito', sans-serif"
                     }}
                 >
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    {item?.description?.slice(0, 100)}....
                 </Typography>
             </CardContent>
             <CardActions
@@ -59,7 +60,7 @@ export const LatestPost = (props: itemType) => {
                 }}
             >
                 <Button
-                    href='!#'
+                    href={item?.url}
                     className={Styles.menuArea}
                     endIcon={
                         <NavigateNextIcon sx={{

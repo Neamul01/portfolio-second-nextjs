@@ -92,7 +92,8 @@ export const Contact = () => {
                         textAlign: 'center'
                     }}
                 >
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non proident, sunt in culpa qui officia
+                    If you have any queries or you wish to contact me then don&lsquo;t hesitate to message me or contact me in any way given below. I am waiting to get connect with you.
+
                 </Typography>
             </Stack>
             <Stack spacing={4}
