@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Grid, Paper, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
 import { bgcolor, Box } from '@mui/system'
+// import breezeTime from 
 
 
 export const Portfolio = () => {
@@ -85,21 +86,22 @@ export const Portfolio = () => {
                     <ImageList
                         cols={3}
                         variant='masonry'
-                        gap={6}
+                        gap={12}
                         sx={{
                             cursor: 'pointer'
                         }}>
                         {
                             itemData.map((item, index) => (
-                                <ImageListItem key={index}>
-                                    <Image
-                                        width={400}
-                                        height={500}
-                                        // placeholder='blur'
-                                        src={item.img}
-                                        alt={item.title}
-                                    />
-                                    <ImageListItemBar title={item.title}></ImageListItemBar>
+                                <ImageListItem key={index} cols={3} rows={1}>
+                                    <Typography component='a' href={item.url} target='_blanck'>
+                                        <Image
+                                            width={400}
+                                            height={500}
+                                            src={item.img}
+                                            alt={item.title}
+                                        />
+                                        <ImageListItemBar title={item.title}></ImageListItemBar>
+                                    </Typography>
                                 </ImageListItem>
                             ))
                         }
@@ -111,27 +113,18 @@ export const Portfolio = () => {
 }
 const itemData = [
     {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-        title: 'Breakfast',
+        img: '/projects/breezeTime.png',
+        title: 'BreezeTime',
+        url: 'https://breeze-time.netlify.app/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-        title: 'Burger',
+        img: '/projects/gadgetHub.png',
+        title: 'GadgetHub',
+        url: 'https://gadget-hub-2022.web.app/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Camera',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-        title: 'Coffee',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-        title: 'Hats',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-        title: 'Honey',
+        img: '/projects/n@n-Industries.png',
+        title: 'N@N Industries',
+        url: 'https://nn-industries.web.app/'
     }
 ]

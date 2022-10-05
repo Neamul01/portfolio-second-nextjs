@@ -70,7 +70,7 @@ export const Blogs = () => {
                         textAlign: 'center'
                     }}
                 >
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida non proident, sunt in culpa qui officia
+                    Here are my blogs. I always try to express my learning throw blogs. If you have any suggestions for me please share them with me, it is very appreciable.
                 </Typography>
             </Stack>
             <Stack spacing={4}
@@ -171,18 +171,24 @@ export const Blogs = () => {
 }
 const itemData = [
     {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-        title: 'Breakfast',
-        height: '800px'
+        img: '/blogs/virtual-dom.png',
+        title: 'Something about Virtual Dom',
+        height: '800px',
+        url: 'https://www.linkedin.com/pulse/react-virtual-dom-md-neamul-haque/?trackingId=VmEXYLvXSgG%2BI7TeHOhn4A%3D%3D',
+        description: 'Virtual dom is a carbon copy of Real Dom which is introduced by React.js to optimize the performance of a web Application. With the process of “reconciliation”, React kept a virtual representation of the UI in memory and when something changed in UI React compares the change with the virtual representation and commits only the changes in Real DOM.'
     },
     {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-        title: 'Burger',
-        height: '700px'
+        img: '/blogs/react.png',
+        title: 'Something about React',
+        height: '700px',
+        url: 'https://www.linkedin.com/pulse/something-react-md-neamul-haque/?trackingId=34XSLeamQPy0C3QMOaB8Pg%3D%3D',
+        description: 'React.js is a component-based, declarative Javascript library for building interactive UI. React uses Virtual DOM that improves the performance of the app, its component and data pattern helps to maintain a larger app and improve readability. React was developed and maintained by Facebook it is an open-source library, It appeared in 2013 and now it is the most popular library for web development.'
     },
     {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Camera',
+        img: '/blogs/react-redux.png',
+        title: 'Something about React-redux',
+        url: 'https://www.linkedin.com/posts/neamul62_react-redux-reactabrredux-activity-6963193559877373953-6FA9?utm_source=share&utm_medium=member_desktop',
+        description: 'Redux is a pattern and library for managing and updating application state, using events called “actions”. Redux gives us a store outside our dom to serve the data when we need it. React redux is the official React UI bindings layer for Redux. It gives us a redux store to dispatch actions from components.'
     },
     {
         img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',

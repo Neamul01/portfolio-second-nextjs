@@ -8,6 +8,7 @@ type itemType = {
         img: string
         title: string
         height?: string | undefined
+        description?: string
     }
 }
 
@@ -60,7 +61,9 @@ export const RestBlog = (props: itemType) => {
                             fontFamily: "'Nunito', sans-serif"
                         }}
                     >
-                        Lizards are a widespread group
+                        {
+                            item.description ? item?.description?.slice(0, 40) : 'This Blog is coming soon'
+                        }....
                     </Typography>
                 </CardContent>
             </Stack>
