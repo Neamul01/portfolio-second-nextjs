@@ -61,7 +61,7 @@ export default function Introduction() {
                             mb: '2rem',
                         }}>
                         <Stack direction={'row'} sx={{ my: 1 }}>
-                            <Typography component={'a'} href='#!' target='_blank'>
+                            <Typography component={'a'} href='https://github.com/Neamul01' target='_blank'>
                                 <Button
                                     href='!#'
                                     size={'small'}
@@ -78,7 +78,7 @@ export default function Introduction() {
                                             color: 'text.secondary'
                                         },
                                     }}>
-                                    Instagram
+                                    GitHub
                                 </Button>
                             </Typography>
                             <Typography component='a' href='https://www.linkedin.com/in/neamul62/' target='_blanck'>

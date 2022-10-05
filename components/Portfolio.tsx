@@ -10,6 +10,7 @@ export const Portfolio = () => {
     const [open, setOpen] = useState(false)
     return (
         <Stack
+            id='portfolio'
             direction='column'
             sx={{
                 backgroundColor: 'background.paper',

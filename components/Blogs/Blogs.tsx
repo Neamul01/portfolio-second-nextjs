@@ -9,8 +9,10 @@ import Styles from '../../styles/Home.module.css'
 export const Blogs = () => {
     const latest2post = itemData.slice(0, 2);
     const restPosts = itemData.slice(2, 5);
+
     return (
         <Box
+            id='blogs'
             sx={{
                 backgroundColor: 'background.default',
                 backgroundImage: 'none',
