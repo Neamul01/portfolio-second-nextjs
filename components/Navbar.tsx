@@ -5,8 +5,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import SouthIcon from '@mui/icons-material/South';
 import Styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router';
+import { GitHub } from '@mui/icons-material';
 
 export default function Navbar() {
+    const router = useRouter();
     return (
         <AppBar position='static'
             sx={{
@@ -54,7 +57,11 @@ export default function Navbar() {
                 <Stack direction={'row'}  >
                     <Stack direction={'row'} spacing={2} sx={{ pr: 2 }}>
                         <Button
-                            href='!#'
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/"
+                                })
+                            }}
                             className={Styles.menuArea}
                             sx={{
                                 fontSize: '1rem',
@@ -66,7 +73,12 @@ export default function Navbar() {
                                 },
                             }} >Home</Button>
                         <Button
-                            href='!#'
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/",
+                                    hash: "portfolio"
+                                })
+                            }}
                             className={Styles.menuArea}
                             sx={{
                                 fontSize: '1rem',
@@ -78,8 +90,13 @@ export default function Navbar() {
                                 }
                             }}  >Portfolio</Button>
                         <Button
-                            href='!#'
                             className={Styles.menuArea}
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/",
+                                    hash: "blogs"
+                                })
+                            }}
                             sx={{
                                 fontSize: '1rem',
                                 color: 'text.primary',
@@ -90,7 +107,12 @@ export default function Navbar() {
                                 }
                             }} endIcon={<SouthIcon />}  >Blog</Button>
                         <Button
-                            href='!#'
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/",
+                                    hash: "contact"
+                                })
+                            }}
                             className={Styles.menuArea}
                             sx={{
                                 fontSize: '1rem',
@@ -133,7 +155,7 @@ export default function Navbar() {
                                 }}><LinkedInIcon />
                             </IconButton>
                         </Typography>
-                        <Typography component={'a'} href='#!' target='_blank' >
+                        <Typography component={'a'} href='https://github.com/Neamul01' target='_blank' >
                             <IconButton
                                 className={Styles.menuArea}
                                 component={'p'}
@@ -143,7 +165,7 @@ export default function Navbar() {
                                     display: 'inline-block',
                                     padding: '0'
                                 }}>
-                                <Link href='!#' sx={{ color: 'text.primary', }}><WhatsAppIcon /></Link>
+                                <Link href='!#' sx={{ color: 'text.primary', }}><GitHub /></Link>
                             </IconButton>
                         </Typography>
                     </Stack>

@@ -5,7 +5,7 @@ import React from 'react'
 // import FacebookIcon from '@mui/icons-material/Facebook';
 // import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Email, Phone, Facebook, LinkedIn, WhatsApp } from '@mui/icons-material'
+import { Email, Phone, Facebook, LinkedIn, WhatsApp, GitHub } from '@mui/icons-material'
 import Styles from '../styles/Home.module.css'
 
 export const Contact = () => {
@@ -33,6 +33,7 @@ export const Contact = () => {
 
     return (
         <Box
+            id='contact'
             sx={{
                 backgroundColor: 'background.paper',
                 backgroundImage: 'none',
@@ -167,7 +168,7 @@ export const Contact = () => {
                     </CardContent>
                 </Card>
 
-                {/* skype card  */}
+                {/* GitHub card  */}
                 <Card sx={{ minWidth: '22rem', marginTop: '0 !important' }}>
                     <CardContent
                         sx={{
@@ -178,10 +179,10 @@ export const Contact = () => {
                         }}
                     >
                         <IconButton aria-label="email">
-                            <Email />
+                            <GitHub />
                         </IconButton>
                         <Button
-                            href='!#'
+                            href='https://github.com/Neamul01'
                             className={Styles.menuArea}
                             sx={{
                                 fontSize: '1.1rem',
@@ -193,7 +194,7 @@ export const Contact = () => {
                                     bgcolor: 'background.default'
                                 },
                             }}
-                        >neamulhaque3298@gmail.com</Button>
+                        >GitHub</Button>
                     </CardContent>
                 </Card>
 
