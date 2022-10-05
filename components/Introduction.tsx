@@ -27,6 +27,7 @@ export default function Introduction() {
                     my: 6,
                     p: 4,
                     width: "75%",
+                    flexWrap: 'nowrap'
                 }}>
 
                 {/* name and social section  */}
@@ -162,7 +163,6 @@ export default function Introduction() {
                     <Image
                         width={500}
                         height={839}
-                        // placeholder='blur'
                         src={MyPhoto}
                         alt={'Md Neamul Haque'}
                     ></Image>
@@ -205,7 +205,7 @@ export default function Introduction() {
                         }}>Full-Stack web<br />Developer
                     </Typography>
                     <Typography component={'p'} sx={{ my: '1rem' }}>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate illum culpa omnis est libero provident recusandae eos quo doloremque nulla.
+                        I am a dedicated Web Developer, it is my passion and I love to play with web technologies.
                     </Typography>
                     <Button variant='text'
                         href='!#'
