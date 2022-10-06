@@ -1,4 +1,4 @@
-import { Button, Grid, Paper, Stack, Typography } from '@mui/material'
+import { Box, Button, Grid, Paper, Stack, Typography } from '@mui/material'
 import React from 'react'
 import SouthIcon from '@mui/icons-material/South';
 import DownloadIcon from '@mui/icons-material/Download';
@@ -8,7 +8,7 @@ import MyPhoto from 'public/my-pic.png'
 
 export default function Introduction() {
     return (
-        <Paper
+        <Box
             sx={{
                 backgroundColor: 'background.default',
                 backgroundImage: 'none',
@@ -16,6 +16,7 @@ export default function Introduction() {
                 justifyContent: 'center',
                 boxShadow: 'none',
                 overflow: 'hidden',
+                // maxHeight: '80vh',
                 md: {
                     maxHeight: '80vh',
                 },
@@ -27,8 +28,9 @@ export default function Introduction() {
                     backgroundImage: 'none',
                     backgroundColor: 'background.default',
                     boxShadow: 'none ',
-                    my: 6,
+                    mt: 6,
                     p: 4,
+                    pb: 0,
                     width: "75%",
                     flexWrap: 'wrap',
                     md: {
@@ -172,7 +174,7 @@ export default function Introduction() {
                 </Grid >
 
                 {/* picture section  */}
-                <Grid item xs={12} sm={12} md={4} sx={{ m: 'auto' }}>
+                <Grid item xs={12} sm={12} md={4} sx={{ m: 'auto', height: 480, overflow: 'hidden' }}>
                     <Image
                         width={500}
                         height={839}
@@ -185,27 +187,17 @@ export default function Introduction() {
                 <Grid item xs={12} sm={12} md={4}
                     sx={{
                         ml: 'auto',
-                        m: '0',
-                        // sm: {
-                        //     my: '6rem'
-                        // },
-                        // md: {
-                        //     my: '6rem'
-                        // },
-                        // lg: {
-                        //     my: '6rem'
-                        // }
+                        my: 5,
                     }}>
                     <Typography
                         sx={{
                             color: 'text.secondary',
                             textTransform: 'uppercase',
                             width: '100%',
-                            textAlign: 'left',
                             fontWeight: 'bold',
                             fontSize: '0.9rem',
                             letterSpacing: '.12em',
-                            mb: '0.3rem'
+                            mb: '0.3rem',
                         }}>
                         Introduction
                     </Typography>
@@ -236,6 +228,6 @@ export default function Introduction() {
                         endIcon={<SouthIcon />}>Learn more</Button>
                 </Grid   >
             </Grid >
-        </Paper>
+        </Box >
     )
 }

@@ -15,7 +15,6 @@ export const Portfolio = () => {
             sx={{
                 backgroundColor: 'background.paper',
                 backgroundImage: 'none',
-                // display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 boxShadow: 'none',
@@ -52,7 +51,8 @@ export const Portfolio = () => {
                         fontSize: "35px",
                         lineHeight: "45px",
                         color: 'text.primary',
-                        fontWeight: "700"
+                        fontWeight: "700",
+                        textAlign: 'center'
                     }}
                 >
                     My Masterpiece Collection
@@ -93,7 +93,7 @@ export const Portfolio = () => {
                         }}>
                         {
                             itemData.map((item, index) => (
-                                <ImageListItem key={index} cols={3} rows={1}>
+                                <ImageListItem key={index} cols={1} rows={1}>
                                     <Typography component='a' href={item.url} target='_blanck'>
                                         <Image
                                             width={400}
