@@ -82,9 +82,7 @@ export const Blogs = () => {
                 }}
             >
                 <Box sx={{
-                    // height: 500,
                     width: "80%",
-                    // overflowY: 'scroll'
                 }}>
                     <ImageList
                         cols={3}

@@ -13,6 +13,7 @@ export default function Navbar() {
     return (
         <AppBar position='static'
             sx={{
+                sm: { display: 'none' },
                 boxShadow: 'none',
                 py: 6,
                 alignItems: 'center',

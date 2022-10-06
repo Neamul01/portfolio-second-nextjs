@@ -1,4 +1,4 @@
-import { Button, Grid, Paper, Stack, Typography } from '@mui/material'
+import { Box, Button, Grid, Paper, Stack, Typography } from '@mui/material'
 import React from 'react'
 import SouthIcon from '@mui/icons-material/South';
 import DownloadIcon from '@mui/icons-material/Download';
@@ -8,30 +8,45 @@ import MyPhoto from 'public/my-pic.png'
 
 export default function Introduction() {
     return (
-        <Paper
+        <Box
             sx={{
                 backgroundColor: 'background.default',
                 backgroundImage: 'none',
                 display: 'flex',
                 justifyContent: 'center',
                 boxShadow: 'none',
-                height: '80vh',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                // maxHeight: '80vh',
+                md: {
+                    maxHeight: '80vh',
+                },
             }}
         >
-            <Grid container columns={{ xs: 1, sm: 1, md: 2, lg: 3 }}
+            <Grid container
+                // columns={{ xs: 4, sm: 8, md: 12 }}
                 sx={{
                     backgroundImage: 'none',
                     backgroundColor: 'background.default',
                     boxShadow: 'none ',
-                    my: 6,
+                    mt: 6,
                     p: 4,
+                    pb: 0,
                     width: "75%",
-                    flexWrap: 'nowrap'
+                    flexWrap: 'wrap',
+                    md: {
+                        flexWrap: 'nowrap',
+                        height: '80vh',
+                    }
                 }}>
 
                 {/* name and social section  */}
-                <Stack >
+                <Grid item xs={12} sm={12} md={4}
+                    sx={{
+                        sm: {
+                            // textAlign: 'center'
+                        }
+                    }}
+                >
                     <Typography variant='h2'
                         sx={{
                             fontWeight: 'bold',
@@ -50,7 +65,7 @@ export default function Introduction() {
                         }}></Typography>
                     </Typography>
                     <Typography sx={{
-                        width: '20%',
+                        // width: '20%',
                         height: '0.1rem',
                         my: '1rem',
                         bgcolor: 'text.secondary',
@@ -156,44 +171,33 @@ export default function Introduction() {
                             }}>Resume
                         </Button>
                     </Typography>
-                </Stack >
+                </Grid >
 
                 {/* picture section  */}
-                <Stack sx={{ m: 'auto' }}>
+                <Grid item xs={12} sm={12} md={4} sx={{ m: 'auto', height: 480, overflow: 'hidden' }}>
                     <Image
                         width={500}
                         height={839}
                         src={MyPhoto}
                         alt={'Md Neamul Haque'}
                     ></Image>
-                </Stack >
+                </Grid >
 
                 {/* Introduction section  */}
-                <Stack
+                <Grid item xs={12} sm={12} md={4}
                     sx={{
                         ml: 'auto',
-                        maxWidth: '30%',
-                        m: '0',
-                        // sm: {
-                        //     my: '6rem'
-                        // },
-                        // md: {
-                        //     my: '6rem'
-                        // },
-                        // lg: {
-                        //     my: '6rem'
-                        // }
+                        my: 5,
                     }}>
                     <Typography
                         sx={{
                             color: 'text.secondary',
                             textTransform: 'uppercase',
                             width: '100%',
-                            textAlign: 'left',
                             fontWeight: 'bold',
                             fontSize: '0.9rem',
                             letterSpacing: '.12em',
-                            mb: '0.3rem'
+                            mb: '0.3rem',
                         }}>
                         Introduction
                     </Typography>
@@ -222,8 +226,8 @@ export default function Introduction() {
                             }
                         }}
                         endIcon={<SouthIcon />}>Learn more</Button>
-                </Stack >
+                </Grid   >
             </Grid >
-        </Paper>
+        </Box >
     )
 }
