@@ -15,11 +15,14 @@ export default function Introduction() {
                 display: 'flex',
                 justifyContent: 'center',
                 boxShadow: 'none',
-                height: '80vh',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                md: {
+                    maxHeight: '80vh',
+                },
             }}
         >
-            <Grid container columns={{ xs: 1, sm: 1, md: 2, lg: 3 }}
+            <Grid container
+                // columns={{ xs: 4, sm: 8, md: 12 }}
                 sx={{
                     backgroundImage: 'none',
                     backgroundColor: 'background.default',
@@ -27,11 +30,21 @@ export default function Introduction() {
                     my: 6,
                     p: 4,
                     width: "75%",
-                    flexWrap: 'nowrap'
+                    flexWrap: 'wrap',
+                    md: {
+                        flexWrap: 'nowrap',
+                        height: '80vh',
+                    }
                 }}>
 
                 {/* name and social section  */}
-                <Stack >
+                <Grid item xs={12} sm={12} md={4}
+                    sx={{
+                        sm: {
+                            // textAlign: 'center'
+                        }
+                    }}
+                >
                     <Typography variant='h2'
                         sx={{
                             fontWeight: 'bold',
@@ -50,7 +63,7 @@ export default function Introduction() {
                         }}></Typography>
                     </Typography>
                     <Typography sx={{
-                        width: '20%',
+                        // width: '20%',
                         height: '0.1rem',
                         my: '1rem',
                         bgcolor: 'text.secondary',
@@ -156,23 +169,22 @@ export default function Introduction() {
                             }}>Resume
                         </Button>
                     </Typography>
-                </Stack >
+                </Grid >
 
                 {/* picture section  */}
-                <Stack sx={{ m: 'auto' }}>
+                <Grid item xs={12} sm={12} md={4} sx={{ m: 'auto' }}>
                     <Image
                         width={500}
                         height={839}
                         src={MyPhoto}
                         alt={'Md Neamul Haque'}
                     ></Image>
-                </Stack >
+                </Grid >
 
                 {/* Introduction section  */}
-                <Stack
+                <Grid item xs={12} sm={12} md={4}
                     sx={{
                         ml: 'auto',
-                        maxWidth: '30%',
                         m: '0',
                         // sm: {
                         //     my: '6rem'
@@ -222,7 +234,7 @@ export default function Introduction() {
                             }
                         }}
                         endIcon={<SouthIcon />}>Learn more</Button>
-                </Stack >
+                </Grid   >
             </Grid >
         </Paper>
     )

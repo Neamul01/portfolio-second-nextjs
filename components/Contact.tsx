@@ -75,7 +75,8 @@ export const Contact = () => {
                         fontSize: "35px",
                         lineHeight: "45px",
                         color: 'text.primary',
-                        fontWeight: "700"
+                        fontWeight: "700",
+                        textAlign: 'center',
                     }}
                 >
                     Ways To Contact Me
