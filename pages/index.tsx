@@ -40,13 +40,13 @@ const Home: NextPage = () => {
             alignItems: "center",
           }}
         >
-          {/* <Navbar /> */}
+          <Navbar />
           <Introduction />
-          {/* <Portfolio /> */}
+          <Portfolio />
           {/* <Services /> */}
-          {/* <Blogs />
+          <Blogs />
           <Contact />
-          <Footer /> */}
+          <Footer />
         </Stack>
       </Paper>
     </ThemeProvider>
