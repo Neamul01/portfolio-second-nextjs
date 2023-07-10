@@ -41,12 +41,12 @@ const Home: NextPage = () => {
           }}
         >
           <Navbar />
-          {/* <Introduction /> */}
+          <Introduction />
           {/* <Portfolio /> */}
-          {/* <Services /> */}
-          {/* <Blogs />
+          <Services />
+          <Blogs />
           <Contact />
-          <Footer /> */}
+          <Footer />
         </Stack>
       </Paper>
     </ThemeProvider>
