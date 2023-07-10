@@ -28,6 +28,7 @@ export default function Navbar() {
         alignItems: "center",
         backgroundImage: "none",
         bgcolor: "background.default",
+        scrollBehavior: "smooth",
       }}
       style={{ backgroundColor: "transparent" }}
     >
@@ -104,6 +105,7 @@ export default function Navbar() {
                 color: "text.primary",
                 fontWeight: "bold",
                 textTransform: "inherit",
+                scrollBehavior: "smooth",
                 ":hover": {
                   bgcolor: "background.default",
                 },
