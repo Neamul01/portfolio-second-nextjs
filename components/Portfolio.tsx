@@ -1,7 +1,7 @@
 import { IconButton, ImageList, ImageListItem, ImageListItemBar } from '@mui/material'
 import React, { useState } from 'react'
 import { Grid, Paper, Stack, Typography } from '@mui/material'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { bgcolor, Box } from '@mui/system'
 // import breezeTime from 
 

@@ -3,7 +3,7 @@ import React from "react";
 import SouthIcon from "@mui/icons-material/South";
 import DownloadIcon from "@mui/icons-material/Download";
 import Styles from "../styles/Home.module.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import MyPhoto from "public/my-pic.png";
 
 export default function Introduction() {
