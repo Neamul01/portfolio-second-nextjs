@@ -40,8 +40,8 @@ const Home: NextPage = () => {
             alignItems: "center",
           }}
         >
-          {/* <Navbar /> */}
-          <Introduction />
+          <Navbar />
+          {/* <Introduction /> */}
           {/* <Portfolio /> */}
           {/* <Services /> */}
           {/* <Blogs />
