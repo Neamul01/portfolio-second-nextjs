@@ -1,54 +1,56 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar'
-import { createTheme, Paper, Stack, ThemeProvider } from '@mui/material'
-import Introduction from '../components/Introduction'
-import { Services } from '../components/Services'
-import { Portfolio } from '../components/Portfolio'
-import { Blogs } from '../components/Blogs/Blogs'
-import { Contact } from '../components/Contact'
-import { Footer } from '../components/Footer'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Navbar from "../components/Navbar";
+import { createTheme, Paper, Stack, ThemeProvider } from "@mui/material";
+import Introduction from "../components/Introduction";
+import { Services } from "../components/Services";
+import { Portfolio } from "../components/Portfolio";
+import { Blogs } from "../components/Blogs/Blogs";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 
 const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
     text: {
-      primary: '#DADADA',
-      secondary: '#D7A147'
+      primary: "#DADADA",
+      secondary: "#D7A147",
     },
     background: {
-      default: '#2E2E35',
-      paper: '#34343B'
-    }
-  }
+      default: "#2E2E35",
+      paper: "#34343B",
+    },
+  },
 });
 
 const Home: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Paper className={styles.container}
+      <Paper
+        className={styles.container}
         sx={{
-          backgroundImage: 'none',
-          backgroundColor: 'background.default'
+          backgroundImage: "none",
+          backgroundColor: "background.default",
         }}
       >
         <Stack
           sx={{
-            alignItems: 'center'
-          }}>
-          <Navbar />
+            alignItems: "center",
+          }}
+        >
+          {/* <Navbar /> */}
           <Introduction />
-          <Portfolio />
+          {/* <Portfolio /> */}
           {/* <Services /> */}
-          <Blogs />
+          {/* <Blogs />
           <Contact />
-          <Footer />
+          <Footer /> */}
         </Stack>
       </Paper>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
