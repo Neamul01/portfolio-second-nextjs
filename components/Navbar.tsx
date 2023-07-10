@@ -165,15 +165,12 @@ export default function Navbar() {
               pl: 2,
             }}
           >
-            <Typography
-              component={"a"}
-              href="https://www.facebook.com/neamul.haque.1614"
-              target={"_blank"}
-            >
+            <Typography component={"p"}>
               <IconButton
-                // href='!#'
+                component={"a"}
+                href="https://www.facebook.com/neamul.haque.1614"
+                target={"_blank"}
                 className={Styles.menuArea}
-                component={"p"}
                 sx={{
                   pr: 1,
                   fontSize: "1rem",
@@ -186,14 +183,12 @@ export default function Navbar() {
                 <FacebookIcon />
               </IconButton>
             </Typography>
-            <Typography
-              component="a"
-              href="https://www.linkedin.com/in/neamul62/"
-              target="_blanck"
-            >
+            <Typography component="p">
               <IconButton
                 className={Styles.menuArea}
-                component={"p"}
+                component={"a"}
+                href="https://www.linkedin.com/in/neamul62/"
+                target="_blanck"
                 size="small"
                 sx={{
                   mx: "0.6rem !important",
@@ -207,14 +202,12 @@ export default function Navbar() {
                 <LinkedInIcon />
               </IconButton>
             </Typography>
-            <Typography
-              component={"a"}
-              href="https://github.com/Neamul01"
-              target="_blank"
-            >
+            <Typography component={"p"}>
               <IconButton
                 className={Styles.menuArea}
-                component={"p"}
+                component={"a"}
+                href="https://github.com/Neamul01"
+                target="_blank"
                 sx={{
                   fontSize: "1rem",
                   fontWeight: "bold",
@@ -222,9 +215,7 @@ export default function Navbar() {
                   padding: "0",
                 }}
               >
-                <Link href="!#" sx={{ color: "text.primary" }}>
-                  <GitHub />
-                </Link>
+                <GitHub />
               </IconButton>
             </Typography>
           </Stack>
