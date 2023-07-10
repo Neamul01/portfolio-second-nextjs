@@ -216,6 +216,7 @@ export default function Introduction() {
             height={839}
             src={MyPhoto}
             alt={"Md Neamul Haque"}
+            priority
           ></Image>
         </Grid>
 

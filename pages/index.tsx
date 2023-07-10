@@ -42,8 +42,8 @@ const Home: NextPage = () => {
         >
           <Navbar />
           <Introduction />
-          {/* <Portfolio /> */}
-          <Services />
+          <Portfolio />
+          {/* <Services /> */}
           <Blogs />
           <Contact />
           <Footer />
