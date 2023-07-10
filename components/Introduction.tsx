@@ -262,7 +262,7 @@ export default function Introduction() {
           </Typography>
           <Button
             variant="text"
-            href="!#"
+            href="#portfolio"
             className={Styles.menuArea}
             sx={{
               color: "text.secondary",
