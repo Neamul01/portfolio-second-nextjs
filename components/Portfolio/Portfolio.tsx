@@ -6,9 +6,9 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { Grid, Paper, Stack, Typography } from "@mui/material";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { bgcolor, Box } from "@mui/system";
-// import breezeTime from
+import styles from "./portfolio.module.css";
 
 export const Portfolio = () => {
   const [open, setOpen] = useState(false);
@@ -90,9 +90,7 @@ export const Portfolio = () => {
       >
         <Box
           sx={{
-            // height: 500,
-            width: "80%",
-            // overflowY: 'scroll'
+            width: "100%",
           }}
         >
           <ImageList
@@ -101,19 +99,46 @@ export const Portfolio = () => {
             gap={12}
             sx={{
               cursor: "pointer",
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "3px",
+              width: "100%",
             }}
           >
             {itemData.map((item, index) => (
-              <ImageListItem key={index} cols={1} rows={1}>
-                <Typography component="a" href={item.url} target="_blanck">
-                  <Image
-                    width={400}
-                    height={400}
-                    src={item.img}
-                    alt={item.title}
-                  />
+              <ImageListItem
+                key={index}
+                cols={1}
+                rows={1}
+                sx={{
+                  gridColumn: "span 1",
+                }}
+                className={styles.portfolioGalleryParent}
+              >
+                {/* <div className="portfolio-gallery-parent"> */}
+                <Typography
+                  component="a"
+                  href={item.url}
+                  target="_blanck"
+                  className=""
+                >
+                  <div className="">
+                    <Image
+                      height={400}
+                      width={400}
+                      src={item.img}
+                      alt={item.title}
+                    />
+                    <div
+                      className={styles.portfolioGallery}
+                      style={{ height: 400, width: 400, position: "relative" }}
+                    >
+                      <Image src={"/projects/zoom.svg"} fill alt="zoom" />
+                    </div>
+                  </div>
                   <ImageListItemBar title={item.title}></ImageListItemBar>
                 </Typography>
+                {/* </div> */}
               </ImageListItem>
             ))}
           </ImageList>
