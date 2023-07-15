@@ -112,33 +112,38 @@ export const Portfolio = () => {
                 rows={1}
                 sx={{
                   gridColumn: "span 1",
+                  borderRadius: "10px",
+                  overflow: "hidden",
                 }}
-                className={styles.portfolioGalleryParent}
               >
-                {/* <div className="portfolio-gallery-parent"> */}
                 <Typography
                   component="a"
                   href={item.url}
                   target="_blanck"
-                  className=""
+                  sx={{
+                    position: "relative",
+                  }}
                 >
-                  <div className="">
-                    <Image
-                      height={400}
-                      width={400}
-                      src={item.img}
-                      alt={item.title}
-                    />
+                  <div
+                    className={styles.portfolioGalleryParent}
+                    style={{
+                      height: 400,
+                      width: 400,
+                    }}
+                  >
+                    <Image fill src={item.img} alt={item.title} />
                     <div
                       className={styles.portfolioGallery}
-                      style={{ height: 400, width: 400, position: "relative" }}
+                      style={{ height: 400, width: 400 }}
                     >
                       <Image src={"/projects/zoom.svg"} fill alt="zoom" />
                     </div>
                   </div>
-                  <ImageListItemBar title={item.title}></ImageListItemBar>
+                  <ImageListItemBar
+                    title={item.title}
+                    className={styles.portfolioTitleBar}
+                  ></ImageListItemBar>
                 </Typography>
-                {/* </div> */}
               </ImageListItem>
             ))}
           </ImageList>

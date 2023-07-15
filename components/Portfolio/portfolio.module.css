@@ -4,7 +4,7 @@
 }
 
 .portfolioGalleryParent:hover .portfolioGallery {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   height: 100%;
@@ -17,9 +17,13 @@
     #002133 0.39%,
     rgba(0, 33, 51, 0) 51.47%
   );
+  z-index: 20;
   opacity: 1;
   transform: translateX(0%);
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.portfolioGalleryParent:hover .portfolioTitleBar {
+  display: none;
 }
 
 .portfolioGalleryParent:not(:hover) .portfolioGallery {
@@ -44,4 +48,10 @@
   );
   opacity: 1;
   transform: translateX(-100%);
+}
+
+.portfolioGallery img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
 }
