@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import { createTheme, Paper, Stack, ThemeProvider } from "@mui/material";
 import Introduction from "../components/Introduction";
 import { Services } from "../components/Services";
-import { Portfolio } from "../components/Portfolio";
+import { Portfolio } from "../components/Portfolio/Portfolio";
 import { Blogs } from "../components/Blogs/Blogs";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
