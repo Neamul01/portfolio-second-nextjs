@@ -78,7 +78,7 @@ export const Portfolio = () => {
         >
           Here are my best projects. All are not done yet something is under
           construction, and I am working with them. If you have any suggestions
-          please share them with me.
+          have any suggestions please share them with me.
         </Typography>
       </Stack>
       <Stack
