@@ -1,10 +1,10 @@
 .container {
   display: flex;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.menuArea::after {
+/* .menuArea::after {
   position: absolute;
   content: "";
   top: 110%;
@@ -12,16 +12,29 @@
   height: 2px;
   left: 0;
   background: #e4aa48;
-  transition: transform .5s;
-  transition: width .5s;
-}
-
-.menuArea:hover::after {
-  width: 100%;
+  transition: transform 0.5s;
+  transition: width 0.5s;
+} */
+.menuArea::before {
+  background: hsl(45 100% 70%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
   transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: 0.2;
+  height: 2px;
+  top: 100%;
 }
 
-.menuAreaHoverOver:hover::after {
+.menuArea:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* .menuAreaHoverOver:hover::after {
   width: 0;
   transform: scaleX(0);
-}
+} */
