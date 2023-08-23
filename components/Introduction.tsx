@@ -186,15 +186,16 @@ export default function Introduction() {
               endIcon={<DownloadIcon />}
               variant="outlined"
               size="large"
+              className={Styles.fullHover}
               sx={{
                 color: "text.secondary",
                 borderColor: "text.secondary",
                 fontWeight: "bold",
                 width: "60%",
                 ":hover": {
-                  bgcolor: "text.secondary",
-                  borderColor: "text.secondary",
-                  color: "Black",
+                  // bgcolor: "text.secondary",
+                  // borderColor: "text.secondary",
+                  color: "Black !important",
                 },
               }}
             >

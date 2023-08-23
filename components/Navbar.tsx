@@ -40,13 +40,14 @@ export default function Navbar() {
         <Typography
           variant="h6"
           component={"div"}
+          className=""
           sx={{
             flexGrow: 1,
           }}
         >
           <Button
             href="!#"
-            className={Styles.menuArea}
+            className={`${Styles.menuArea} `}
             sx={{
               color: "text.primary",
               fontWeight: "bold",
