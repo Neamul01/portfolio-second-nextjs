@@ -23,7 +23,13 @@ export const Portfolio = () => {
         justifyContent: "center",
         boxShadow: "none",
         width: "100%",
-        padding: "7.5rem",
+        display: "flex",
+        justifyItems: "center",
+        alignContent: "center",
+        padding: {
+          xs: "0.4rem",
+          md: "7.5rem",
+        },
       }}
     >
       <Stack
@@ -100,7 +106,10 @@ export const Portfolio = () => {
             sx={{
               cursor: "pointer",
               display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
+              gridTemplateColumns: {
+                xs: "1fr",
+                md: "repeat(3, 1fr)",
+              },
               gap: "3px",
               width: "100%",
             }}

@@ -29,8 +29,10 @@ export default function Navbar() {
         backgroundImage: "none",
         bgcolor: "background.default",
         scrollBehavior: "smooth",
+        display: "flex",
+        justifyItems: "center",
+        width: "100%",
       }}
-      style={{ backgroundColor: "transparent" }}
     >
       <Toolbar
         sx={{
@@ -166,6 +168,10 @@ export default function Navbar() {
               alignItems: "center",
               borderLeft: 1,
               pl: 2,
+              display: {
+                xs: "none",
+                md: "flex",
+              },
             }}
           >
             <Typography component={"p"}>
